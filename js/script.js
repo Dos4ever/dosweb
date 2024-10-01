@@ -4,11 +4,20 @@
 const header = document.querySelector('header');
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
+const images = document.querySelectorAll('img');
 
 /* --------------- remove toggle icon and navbar when click navbar link (scroll) ---------------- */
 navbar.addEventListener('click', () => {
     menuIcon.classList.remove('bx-x'); // إزالة الكلاس bx-x من أيقونة القائمة
     navbar.classList.remove('active'); // إزالة الكلاس active من شريط التنقل
+});
+
+// منع النقر بزر الفأرة الأيمن
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// منع سحب الصور
+images.forEach(img => {
+    img.addEventListener('dragstart', event => event.preventDefault());
 });
 
 /* --------------- toggle icon navbar ---------------- */
