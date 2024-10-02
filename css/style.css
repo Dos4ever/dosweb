@@ -98,6 +98,11 @@ header {
     }
 }
 
+.home-content #homeinfo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 .home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
