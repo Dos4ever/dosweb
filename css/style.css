@@ -438,8 +438,7 @@ span {
 }
 
 #cookies-btn {
-    display: inline-flex; /* الزر سيكون في سطر منفصل ويعرض في المنتصف */
-    margin-top: 20px; 
+    display: inline-block; /* الزر سيكون في سطر منفصل ويعرض في المنتصف */
     padding: 1rem 2.8rem;
     text-align: center;
     background: var(--main-color);
