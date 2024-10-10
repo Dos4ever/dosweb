@@ -530,7 +530,7 @@ span {
    }
 
    .home-img img {
-    width: 70vm;
+    width: 70vw;
     margin-top: 4rem;
    }
 
@@ -562,7 +562,7 @@ span {
     }
 
     .home-img img {
-        width: 80vm;
+        width: 80vw;
         margin-top: 2rem;
        }
     
@@ -587,7 +587,7 @@ span {
     }
 
     .home-img img {
-        width: 85vm;
+        width: 85vw;
         margin-top: 2rem;
        }
     
