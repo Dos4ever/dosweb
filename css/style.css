@@ -414,6 +414,7 @@ span {
     align-items: center; /* لتمركز النافذة عموديًا وأفقيًا */
     background-color: rgba(0, 0, 0, 0.5); /* لون خلفية شفاف للصفحة بأكملها */
     z-index: 100; /* لتكون النافذة فوق كل شيء */
+    display: none; /* Note: to show the cookies div in index.html  */ 
 }
 
 .cookies {
@@ -424,7 +425,7 @@ span {
     justify-content: center;
     align-items: center; /* لتمركز العناصر داخل النافذة */
     gap: 20px;
-    display: none; /* Note: to show the cookies div in index.html  */ 
+    
 }
 
 .cookies p {
