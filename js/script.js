@@ -143,6 +143,49 @@ function initializeTyped() {
     }
 }
 
+// #cookies Method.
+//Function to set a cookie with a specified name, value, and expiration in days
+setCookie = (cName, cValue, expDays) => {
+    let date = new Date();
+    date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000))
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+}
+
+// Function to retrieve the value of a specified cookie by its name
+getCookie = (cName) => {
+    const name = cName + "=";
+    const cDecoded = decodeURIComponent(document.cookie);
+    const cArr = cDecoded.split("; ");
+    let value;
+    cArr.forEach(val => {
+        if(val.indexOf(name) === 0) value = val.substring(name.length);
+    })
+    return value;
+}
+
+// Adds a click event listener to the button with the ID "cookies-btn"
+// When the button is clicked, it hides the element with the ID "cookies" by setting its display style to "none",
+// and sets a cookie named "cookie" with the value `true` and an expiration of 1 day.
+document.querySelector("#cookies-btn").addEventListener("click", ()=> {
+    document.querySelector("#cookies").style.display = "none";
+    setCookie ("cookie", true, 1);
+
+})
+
+
+// Function to display the cookie consent message if the "cookie" consent cookie is not set
+// If the "cookie" cookie does not exist, the function makes the element with the ID "cookies" visible
+cookieMessage = () => {
+    if(!getCookie("cookie"))
+        document.querySelector("#cookies").style.display = "block";
+}
+
+
+// Adds an event listener to execute the cookieMessage function when the page loads
+// This ensures that the cookie consent banner is shown if the "cookie" consent has not been given
+window.addEventListener("load", cookieMessage);
+
 // تأكد من تشغيل الكود بعد تحميل DOM
 document.addEventListener('DOMContentLoaded', initializeTyped);
 
