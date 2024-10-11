@@ -387,76 +387,73 @@ span {
 
 }
 
-/*cookies Configuration*/
-.cookiesContainer {
-    width: 500px; /* حجم أصغر لجعل نافذة الكوكيز أصغر */
+ /*cookies Configuration*/
+ .cookiesContainer {
+    width: 72%;
     margin: auto;
     padding: 2rem; /* إضافة تباعد داخلي */
-    background-color: rgba(0, 0, 0, 0.8); /* لون خلفية شفاف قليلاً */
+    background-color: var(--second-bg-color); /* لون خلفية شفاف قليلاً */
     border-radius: 1rem; /* حواف دائرية */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* إضافة ظل للصندوق */
 }
 
 .cookiesSubContainer {
-    width: 100%;
+    width: 85%;
     margin: auto;
-    text-align: center; /* لمحاذاة النص في الوسط */
 }
 
 #cookies {
     width: 100%;
-    height: 100vh; /* يشغل الشاشة كاملة */
+    height: 100vh;
+    padding-top: 24rem;
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     display: flex;
     justify-content: center;
-    align-items: center; /* لتمركز النافذة عموديًا وأفقيًا */
-    background-color: rgba(0, 0, 0, 0.5); /* لون خلفية شفاف للصفحة بأكملها */
-    z-index: 100; /* لتكون النافذة فوق كل شيء */
-    /* display: none;  Note: to show the cookies div in index.html  */ 
+    align-items: center;
+    color: rgb(255, 255, 255);
+    z-index: 1000;
+    display: none; /* Note: to show the cookies div in index.html  */ 
 }
 
 .cookies {
     min-height: 70px;
     display: flex;
-    flex-direction: column; /* تغيير الاتجاه لجعل العناصر عمودية */
     font-weight: 500;
-    justify-content: center;
-    align-items: center; /* لتمركز العناصر داخل النافذة */
-    gap: 20px;
-    
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .cookies p {
-    font-size: 1.8rem; /* تصغير النص قليلاً */
-    color: #fff; /* تغيير لون النص إلى الأبيض */
+font-size: 2rem;
 }
 
 .cookies a {
     color: yellow;
     font-weight: 500;
-    text-decoration: underline; /* إضافة خط تحت الرابط */
+    text-decoration: none;
 }
 
 #cookies-btn {
-    display: inline-block; /* الزر سيكون في سطر منفصل ويعرض في المنتصف */
+    display: inline;
     padding: 1rem 2.8rem;
-    text-align: center;
     background: var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
-    font-size: 1.6rem;
-    color: var(--second-bg-color);
+    font-size: 2rem;
+    color: var(--bg-color);
     letter-spacing: .1rem;
+    font-weight: bold;
     transition: box-shadow .5s ease;
-    cursor: pointer;
 }
 
 #cookies-btn:hover {
-    box-shadow: none;
-    background-color: var(--second-bg-color); 
-    color: var(--main-color);
+box-shadow: none;
+background-color: var(--second-bg-color); 
+color: var(--main-color);
 }
 
     /* BREAKPOINTS */
