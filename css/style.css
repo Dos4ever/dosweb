@@ -90,9 +90,11 @@ header {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-2.4rem);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -109,7 +111,7 @@ header {
 }
 
 .home-content h3:nth-of-type(2) {
-   margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 span {
@@ -136,7 +138,7 @@ span {
     border: .2rem solid var(--main-color);
     border-radius: 50%;
     font-size: 2rem;
-    color:  var(--main-color);
+    color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
@@ -218,7 +220,7 @@ span {
 }
 
 .services-container .services-box:hover {
-    border-color:  var(--main-color);
+    border-color: var(--main-color);
     transform: scale(1.02);
 }
 
@@ -240,8 +242,8 @@ span {
     background: var(--second-bg-color);
 }
 
-.portfolio  h2{
-    margin-bottom:  4rem;
+.portfolio h2 {
+    margin-bottom: 4rem;
 }
 
 .portfolio-container {
@@ -254,7 +256,7 @@ span {
 .portfolio-container .portfolio-box {
     position: relative;
     border-radius: 2rem;
-    box-shadow:  0 0 1rem var(--bg-color);
+    box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
 }
@@ -264,7 +266,7 @@ span {
     transition: .5s ease;
 }
 
-.portfolio-box:hover img{
+.portfolio-box:hover img {
     transform: scale(1.1);
 }
 
@@ -387,14 +389,18 @@ span {
 
 }
 
- /*cookies Configuration*/
- .cookiesContainer {
+/*cookies Configuration*/
+.cookiesContainer {
     width: 72%;
     margin: auto;
-    padding: 2rem; /* إضافة تباعد داخلي */
-    background-color: var(--second-bg-color); /* لون خلفية شفاف قليلاً */
-    border-radius: 1rem; /* حواف دائرية */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* إضافة ظل للصندوق */
+    padding: 2rem;
+    /* إضافة تباعد داخلي */
+    background-color: var(--second-bg-color);
+    /* لون خلفية شفاف قليلاً */
+    border-radius: 1rem;
+    /* حواف دائرية */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    /* إضافة ظل للصندوق */
 }
 
 .cookiesSubContainer {
@@ -414,7 +420,8 @@ span {
     align-items: center;
     color: rgb(255, 255, 255);
     z-index: 1000;
-    display: none; /* Note: to show the cookies div in index.html  */ 
+    display: none;
+    /* Note: to show the cookies div in index.html  */
 }
 
 .cookies {
@@ -428,7 +435,7 @@ span {
 }
 
 .cookies p {
-font-size: 2rem;
+    font-size: 2rem;
 }
 
 .cookies a {
@@ -451,12 +458,12 @@ font-size: 2rem;
 }
 
 #cookies-btn:hover {
-box-shadow: none;
-background-color: var(--second-bg-color); 
-color: var(--main-color);
+    box-shadow: none;
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
 }
 
-    /* BREAKPOINTS */
+/* BREAKPOINTS */
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
@@ -490,69 +497,69 @@ color: var(--main-color);
 }
 
 @media (max-width: 768px) {
-   #menu-icon {
-    display: block;
-   }
+    #menu-icon {
+        display: block;
+    }
 
-   .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 1rem 3%;
-    background: var(--bg-color);
-    border-top: .1rem solid rgba(0, 0, 0, .2);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-    display: none;
-   }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
 
-   .navbar.active {
-         display: block;
-   }
+    .navbar.active {
+        display: block;
+    }
 
-   .navbar a {
-    display: block;
-    font-size: 2rem;
-    margin: 3rem 0;
-   }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
 
-   .home {
-    flex-direction: column;
-   }
+    .home {
+        flex-direction: column;
+    }
 
-   .home-content h3 {
-    font-size: 2.6rem;
-   }
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
 
-   .home-content h1 {
-    font-size: 5rem;
-   }
+    .home-content h1 {
+        font-size: 5rem;
+    }
 
-   .home-img img {
-    width: 70vw;
-    margin-top: 4rem;
-   }
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
 
-   .about {
-    flex-direction: column-reverse;
-   }
+    .about {
+        flex-direction: column-reverse;
+    }
 
-   .about img {
-    width: 70vw;
-    margin-top: 4rem;
-   }
+    .about img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
 
-   .services h2 {
-    margin-bottom: 3rem;
-   }
+    .services h2 {
+        margin-bottom: 3rem;
+    }
 
-   .portfolio h2 {
-    margin-bottom: 3rem;
-   }
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
 
-   .portfolio-container {
-    grid-template-columns: repeat(2, 1fr);
-   }
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 617px) {
@@ -563,18 +570,18 @@ color: var(--main-color);
     .home-img img {
         width: 80vw;
         margin-top: 2rem;
-       }
-    
-       .about {
+    }
+
+    .about {
         flex-direction: column-reverse;
-       }
-    
-       .about img {
+    }
+
+    .about img {
         width: 80vw;
         margin-top: 2rem;
-       }
+    }
 
-} 
+}
 
 @media (max-width: 450px) {
     html {
@@ -588,16 +595,16 @@ color: var(--main-color);
     .home-img img {
         width: 85vw;
         margin-top: 2rem;
-       }
-    
-       .about {
+    }
+
+    .about {
         flex-direction: column-reverse;
-       }
-    
-       .about img {
+    }
+
+    .about img {
         width: 85vw;
         margin-top: 2rem;
-       }
+    }
 
 }
 
